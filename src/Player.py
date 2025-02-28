@@ -1,9 +1,8 @@
-import pygame as pg
-from MovingObject import MovingObject
+from Objecter import GameObject
 
 """
 Player Rules:
 """
 
-class Player(MovingObject):
+class Player(GameObject):
     pass

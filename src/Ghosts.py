@@ -1,4 +1,4 @@
-import pygame as pg
+from Objecter import GameObject
 
 """
 Ghost(s) Rules:
@@ -13,10 +13,8 @@ Inky’s tile-targeting scheme: It is calculated by taking the tile two spaces a
 Clyde’s tile-targeting scheme: If Pac-Man is more than 8 tiles away, Clyde’s target tile will be Pac-Man’s current tile. If Clyde is closer than 8 tiles to Pac-Man, he will switch to scatter-mode targeting and head for his own corner of the board until he is far enough away to target Pac-Man again.
 """
 
-class Ghost:
-    def __init__(self, speed: int):
-        self.speed = speed
-        self.current_cell = []
+class Ghost(GameObject):
+    pass
 
 
 

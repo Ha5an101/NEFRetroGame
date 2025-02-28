@@ -4,10 +4,11 @@ from sys import exit
 pg.init()
 
 # The original 3:4 aspect ratio calculated using https://calculatorhub.app/aspect-ratio/
-width = 1080
-height = 1440
-
+width = 600
+height = 800
 screen = pg.display.set_mode((width, height))
+pg.display.set_caption('Pac-Man')
+clock = pg.time.Clock()
 
 def QuitGame():
     pg.quit()
@@ -19,7 +20,7 @@ while True:
             QuitGame()
 
     # Draw elements
-    # get from game manager
 
     # Update screen
     pg.display.update()
+    clock.tick(60)

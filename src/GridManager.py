@@ -23,12 +23,20 @@ class Grid:
 
 class Cell:
     """
-    Walls Logic:
+    Walls Logic
+    Sides that are walls are in binary using the following convention; 
     0001 = 1 = up
-    0100 = 4 = down
     0010 = 2 = right
+    0100 = 4 = down
     1000 = 8 = left
+
+    the sum of these values are combinations of walls
+    Invalid walls are:
+    7, 13, 11, 14 and 15
     """
     def __init__(self, walls: int, points: PointValue):
-        self.walls = walls
+        if walls not in [7, 11, 13, 14, 15]:
+            self.walls = walls
+        else:
+            self.walls = -1 # unaccesable
         self.point = points

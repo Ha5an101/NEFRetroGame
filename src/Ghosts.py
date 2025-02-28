@@ -14,7 +14,9 @@ Clyde’s tile-targeting scheme: If Pac-Man is more than 8 tiles away, Clyde’s
 """
 
 class Ghost:
-    pass
+    def __init__(self, speed: int):
+        self.speed = speed
+        self.current_cell = []
 
 
 

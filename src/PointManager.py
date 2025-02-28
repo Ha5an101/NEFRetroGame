@@ -1,6 +1,6 @@
 from enum import Enum
 
-# Saved list of score
+# Saved list of points
 class PointValue(Enum):
     Empty = 0
     Basic = 10

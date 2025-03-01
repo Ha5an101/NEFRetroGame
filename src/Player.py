@@ -1,4 +1,4 @@
-from Objecter import GameObject
+from IObject import GameObject
 
 """
 Player Rules:

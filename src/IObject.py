@@ -39,6 +39,4 @@ class GridBasedObject(GameObject):
         super().__init__(pos, dirc)
         self.base = grid_base
         self.current_cell = self.base.cells[0][0]
-        SetPosition(self.current_cell.position)
-
-    def 
+        self.SetPosition(self.current_cell.position)

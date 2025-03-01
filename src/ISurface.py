@@ -1,5 +1,5 @@
 import pygame as pg
-from Objecter import GameObject
+from IObject import GameObject
 
 class SurfaceObject(GameObject):
 	def __init__(self, pos: list[int], dirc: list[int], width: int, height: int, color):

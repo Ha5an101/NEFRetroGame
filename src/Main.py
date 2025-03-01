@@ -18,8 +18,8 @@ while True:
     for event in pg.event.get():
         if event.type == pg.QUIT:
             QuitGame()
-
     # Draw elements
+
 
     # Update screen
     pg.display.update()

@@ -13,7 +13,7 @@ class SurfaceObject(GameObject):
 		screen.blit(self.copy_surface, self.pos)
 
 	def AlignSurface(self, screen):
-		self.copy_surface = pg.transform.(self.surface, True if self.direction[1] <= 0 else False, True if self.direction[0] <= 0 else False)
+		self.copy_surface = pg.transform(self.surface, True if self.direction[1] <= 0 else False, True if self.direction[0] <= 0 else False)
 
 class ImageObject(SurfaceObject):
 	def __init__ (self, pos: list[int], dirc: list[int], path: str):

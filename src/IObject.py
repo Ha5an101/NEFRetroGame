@@ -24,7 +24,7 @@ class GridObject(GameObject):
         
         for c in range(cols):
             for r in range(rows):
-                self.cells[c][r] = Cell(0, 0)
+                self.cells[c][r] = CellObject(0, 0)
 
 class CellObject(GameObject):
     def __init__(self, pos: list[int], dirc: list[int], walls: list[int]):

@@ -16,7 +16,7 @@ class GameObject:
 
 class GridObject(GameObject):
     def __init__(self, pos: list[int], dirc: list[int], cols: int, rows: int):
-        super.__init__(pos, dirc)
+        super().__init__(pos, dirc)
         if cols <= 0 or rows <= 0:
             raise ValueError("Cannot have negative number of columns or rows")
 
@@ -26,11 +26,19 @@ class GridObject(GameObject):
             for r in range(rows):
                 self.cells[c][r] = Cell(0, 0)
 
-
 class CellObject(GameObject):
     def __init__(self, pos: list[int], dirc: list[int], walls: list[int]):
-        super.__init__(pos, dirc)
+        super().__init__(pos, dirc)
         self.walls = walls
     
     def UpdateWalls(self, walls: list[int]):
         self.walls = walls
+
+class GridBasedObject(GameObject):
+    def __init__(self, pos: list[int], dirc: list[int], grid_base: GridObject):
+        super().__init__(pos, dirc)
+        self.base = grid_base
+        self.current_cell = self.base.cells[0][0]
+        SetPosition(self.current_cell.position)
+
+    def 

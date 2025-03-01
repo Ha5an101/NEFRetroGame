@@ -8,6 +8,8 @@ width = 600
 height = 800
 screen = pg.display.set_mode((width, height))
 pg.display.set_caption('Pac-Man')
+
+famerate = 60
 clock = pg.time.Clock()
 
 def QuitGame():
@@ -23,4 +25,4 @@ while True:
 
     # Update screen
     pg.display.update()
-    clock.tick(60)
+    clock.tick(famerate)

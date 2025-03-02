@@ -12,7 +12,7 @@ class SurfaceObject:
     def SetSurface(self, surface: pg.Surface):
 		self.surface = surface
 
-    def GetRect(self, **kwargs):
+    def Rect(self, **kwargs):
 		self.rect = self.surface.get_rect(kwargs)
 
 class ImageObject(SurfaceObject):
@@ -86,10 +86,10 @@ class GridBasedObject(GameObject):
             return False
 
         # Find the leading direction to head to with the directional priority being up, right, down and left
-        up_priority = lst == [0, 1]  # up
-        right_priority = lst == [1, 0]  # right
-        down_priority = lst == [0, -1]  # down
-        left_priority = lst == [-1, 0]  # left
+        up_priority = self.direction == [0, 1]  # up
+        right_priority = self.direction == [1, 0]  # right
+        down_priority = self.direction == [0, -1]  # down
+        left_priority = self.direction == [-1, 0]  # left
         lead_direction = [0, 1] if up_priority else [1, 0] if right_priority else [0, -1] if down_priority else [-1, 0]
         lead_direction_index = 1 if lead_direction[0] == 0 else 0
         # Check if the object is not runnin into the cells wall
@@ -99,8 +99,8 @@ class GridBasedObject(GameObject):
         return True
 
     def SetPosition(self, position: list[int])
-        self.current_row += position[0]
-        self.current_col += position[1]
+        self.current_row = position[0]
+        self.current_col = position[1]
 
         super().SetPosition(self.base.cells[current_col][current_row].position)
 

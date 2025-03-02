@@ -1,9 +1,9 @@
 + Grid
-~ Player Movement
-~ Ghost(s) Movement
++ Player Movement
++ Ghost(s) Movement
 + Point Accumilation
-~ Level Logic
-~ Game Over
-~ Game Start
-- UI
++ Level Logic
++ Game Over
++ Game Start
+~ UI
 - Performance

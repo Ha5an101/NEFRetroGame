@@ -3,28 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\atang\\Documents\\GitHub\\Unity\\NEFRetroGame\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\atang\\Documents\\GitHub\\Unity\\NEFRetroGame\\src\\IObject.py||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\IObject.py||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\atang\\Documents\\GitHub\\Unity\\NEFRetroGame\\src\\Ghosts.py||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Ghosts.py||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\atang\\Documents\\GitHub\\Unity\\NEFRetroGame\\src\\Player.py||{3B902123-F8A7-4915-9F01-361F908088D0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Player.py||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\atang\\Documents\\GitHub\\Unity\\NEFRetroGame\\src\\Objecter.py||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Objecter.py||{3B902123-F8A7-4915-9F01-361F908088D0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\atang\\Documents\\GitHub\\Unity\\NEFRetroGame\\src\\ToDo||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\ToDo||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\atang\\Documents\\GitHub\\Unity\\NEFRetroGame\\src\\Surfacer.py||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Surfacer.py||{3B902123-F8A7-4915-9F01-361F908088D0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\atang\\Documents\\GitHub\\Unity\\NEFRetroGame\\src\\LevelManager.py||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\LevelManager.py||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\atang\\Documents\\GitHub\\Unity\\NEFRetroGame\\src\\GameManager.py||{3B902123-F8A7-4915-9F01-361F908088D0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\GameManager.py||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\atang\\Documents\\GitHub\\Unity\\NEFRetroGame\\src\\Main.py||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Main.py||{3B902123-F8A7-4915-9F01-361F908088D0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\atang\\Documents\\GitHub\\Unity\\NEFRetroGame\\src\\PointManager.py||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\PointManager.py||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\atang\\Documents\\GitHub\\Unity\\NEFRetroGame\\src\\Ghosts.py||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Ghosts.py||{3B902123-F8A7-4915-9F01-361F908088D0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\atang\\Documents\\GitHub\\Unity\\NEFRetroGame\\src\\Main.py||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Main.py||{3B902123-F8A7-4915-9F01-361F908088D0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,76 +42,96 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Ghosts.py",
-              "DocumentMoniker": "C:\\Users\\atang\\Documents\\GitHub\\Unity\\NEFRetroGame\\src\\Ghosts.py",
-              "RelativeDocumentMoniker": "src\\Ghosts.py",
-              "ToolTip": "C:\\Users\\atang\\Documents\\GitHub\\Unity\\NEFRetroGame\\src\\Ghosts.py",
-              "RelativeToolTip": "src\\Ghosts.py",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAWAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "ToDo",
+              "DocumentMoniker": "C:\\Users\\atang\\Documents\\GitHub\\Unity\\NEFRetroGame\\src\\ToDo",
+              "RelativeDocumentMoniker": "src\\ToDo",
+              "ToolTip": "C:\\Users\\atang\\Documents\\GitHub\\Unity\\NEFRetroGame\\src\\ToDo",
+              "RelativeToolTip": "src\\ToDo",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-03-01T21:17:24.542Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PointManager.py",
+              "DocumentMoniker": "C:\\Users\\atang\\Documents\\GitHub\\Unity\\NEFRetroGame\\src\\PointManager.py",
+              "RelativeDocumentMoniker": "src\\PointManager.py",
+              "ToolTip": "C:\\Users\\atang\\Documents\\GitHub\\Unity\\NEFRetroGame\\src\\PointManager.py",
+              "RelativeToolTip": "src\\PointManager.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
-              "WhenOpened": "2025-02-28T20:08:13.399Z",
+              "WhenOpened": "2025-03-01T20:58:47.834Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LevelManager.py",
+              "DocumentMoniker": "C:\\Users\\atang\\Documents\\GitHub\\Unity\\NEFRetroGame\\src\\LevelManager.py",
+              "RelativeDocumentMoniker": "src\\LevelManager.py",
+              "ToolTip": "C:\\Users\\atang\\Documents\\GitHub\\Unity\\NEFRetroGame\\src\\LevelManager.py",
+              "RelativeToolTip": "src\\LevelManager.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-03-01T20:53:42.118Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "IObject.py",
+              "DocumentMoniker": "C:\\Users\\atang\\Documents\\GitHub\\Unity\\NEFRetroGame\\src\\IObject.py",
+              "RelativeDocumentMoniker": "src\\IObject.py",
+              "ToolTip": "C:\\Users\\atang\\Documents\\GitHub\\Unity\\NEFRetroGame\\src\\IObject.py",
+              "RelativeToolTip": "src\\IObject.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-03-01T14:04:24.765Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Objecter.py",
-              "DocumentMoniker": "C:\\Users\\atang\\Documents\\GitHub\\Unity\\NEFRetroGame\\src\\Objecter.py",
-              "RelativeDocumentMoniker": "src\\Objecter.py",
-              "ToolTip": "C:\\Users\\atang\\Documents\\GitHub\\Unity\\NEFRetroGame\\src\\Objecter.py",
-              "RelativeToolTip": "src\\Objecter.py",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACYAAAAPAAAAAAAAAA==",
+              "Title": "Ghosts.py",
+              "DocumentMoniker": "C:\\Users\\atang\\Documents\\GitHub\\Unity\\NEFRetroGame\\src\\Ghosts.py",
+              "RelativeDocumentMoniker": "src\\Ghosts.py",
+              "ToolTip": "C:\\Users\\atang\\Documents\\GitHub\\Unity\\NEFRetroGame\\src\\Ghosts.py",
+              "RelativeToolTip": "src\\Ghosts.py",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACQAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
-              "WhenOpened": "2025-02-28T20:04:24.507Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-28T20:08:13.399Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Player.py",
               "DocumentMoniker": "C:\\Users\\atang\\Documents\\GitHub\\Unity\\NEFRetroGame\\src\\Player.py",
               "RelativeDocumentMoniker": "src\\Player.py",
               "ToolTip": "C:\\Users\\atang\\Documents\\GitHub\\Unity\\NEFRetroGame\\src\\Player.py",
               "RelativeToolTip": "src\\Player.py",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
-              "WhenOpened": "2025-02-28T20:00:37.216Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-28T20:00:37.216Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "GameManager.py",
               "DocumentMoniker": "C:\\Users\\atang\\Documents\\GitHub\\Unity\\NEFRetroGame\\src\\GameManager.py",
               "RelativeDocumentMoniker": "src\\GameManager.py",
               "ToolTip": "C:\\Users\\atang\\Documents\\GitHub\\Unity\\NEFRetroGame\\src\\GameManager.py",
               "RelativeToolTip": "src\\GameManager.py",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAATAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
-              "WhenOpened": "2025-02-28T20:00:00.875Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-28T20:00:00.875Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Surfacer.py",
-              "DocumentMoniker": "C:\\Users\\atang\\Documents\\GitHub\\Unity\\NEFRetroGame\\src\\Surfacer.py",
-              "RelativeDocumentMoniker": "src\\Surfacer.py",
-              "ToolTip": "C:\\Users\\atang\\Documents\\GitHub\\Unity\\NEFRetroGame\\src\\Surfacer.py",
-              "RelativeToolTip": "src\\Surfacer.py",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB4AAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
-              "WhenOpened": "2025-02-28T13:04:40.096Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "Main.py",
               "DocumentMoniker": "C:\\Users\\atang\\Documents\\GitHub\\Unity\\NEFRetroGame\\src\\Main.py",
               "RelativeDocumentMoniker": "src\\Main.py",
@@ -111,8 +139,7 @@
               "RelativeToolTip": "src\\Main.py",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
-              "WhenOpened": "2025-02-28T12:50:41.365Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-28T12:50:41.365Z"
             }
           ]
         }

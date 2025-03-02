@@ -11,5 +11,11 @@ The player cannot change directions if thre is a wall but the change will be app
 There are horizontal holes in the maze that allow the player to teleport between the sides of the maze
 """
 
-class Player(GridBasedObject, SurfaceObject):
-    pass
+class PacMan(GridBasedObject, SurfaceObject):
+    def __init__(self, position: list[int], direction: list[int], grid: GridObject, surface: SurfaceObject):
+        GridBasedObject.__init__(self, position, direction)
+        self.target_row: int
+        self.target_col: int
+        
+        SurfaceObject.__init__(self, surface.get_width(), surface.get_height())
+        self.Rect(center=(0,0))

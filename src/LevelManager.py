@@ -5,6 +5,14 @@ class Level:
         self.name = name
 
         if presetGrid is None:
-            self.grid = GridObject(28, 36)
+            self.original_grid = GridObject(28, 36)
         else:
-            self.grid = presetGrid
+            self.original_grid = presetGrid
+
+        self.RestartLevel()
+
+    def CompleteLevel(self):
+        del self
+
+    def RestartLevel(self):
+        self.play_grid = self.original_grid

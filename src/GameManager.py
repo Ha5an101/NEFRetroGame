@@ -31,17 +31,20 @@ class Game:
                 return False
             return True
         
-        def CheckCollisionWithPlayer():
+        def CheckCollisionsWithPlayer():
             if self.player.rect.collidelist([ghost.rect for ghost in self.ghosts]):
                 self.lives -= 1
-        CheckCollisionWithPlayer()
+                
+            elif self.player.rect.collidelist([]):
+                self.AccumilateScore()
+        CheckCollisionsWithPlayer()
 
         def MoveObjects():
-            inp = [(1 if keys[pg.K_UP] or keys[pg.K_w] else -1 if keys[pg.K_DOWN] or keys[pg.K_s] else 0), (1 if keys[pg.K_RIGHT] or keys[pg.K_d] else -1 if keys[pg.K_LEFT] or keys[pg.K_a] else 0)]
-            self.player.ChangePosition(inp) # Input
-
+            self.player.MoveByInput(keys)
+            
             for ghost in self.ghosts:
-                ghost.ChangePosition([ghost.target_col - ghost.current_col, ghost.target_row - ghost.current_row])
+                ghost.TargetCell(self.player)
+                ghost.MoveToTarget()
         MoveObjects()
         
         

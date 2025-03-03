@@ -1,4 +1,5 @@
-from IObject import GridBasedObject, SurfaceObject
+import pygame as pg
+from IObject import SurfaceObject, GridObject, GridBasedObject
 
 """
 Player Rules:
@@ -11,11 +12,12 @@ The player cannot change directions if thre is a wall but the change will be app
 There are horizontal holes in the maze that allow the player to teleport between the sides of the maze
 """
 
-class PacMan(GridBasedObject, SurfaceObject):
+class PacMan(GridBasedObject):
     def __init__(self, position: list[int], direction: list[int], grid: GridObject, surface: SurfaceObject):
-        GridBasedObject.__init__(self, position, direction)
+        super().__init__(self, position, direction, grid, surface)
         self.target_row: int
         self.target_col: int
-        
-        SurfaceObject.__init__(self, surface.get_width(), surface.get_height())
-        self.Rect(center=(0,0))
+    
+    def MoveByInput(self, keys):
+        inp = [(1 if keys[pg.K_UP] or keys[pg.K_w] else -1 if keys[pg.K_DOWN] or keys[pg.K_s] else 0), (1 if keys[pg.K_RIGHT] or keys[pg.K_d] else -1 if keys[pg.K_LEFT] or keys[pg.K_a] else 0)]
+        self.ChangePosition(inp) # Input

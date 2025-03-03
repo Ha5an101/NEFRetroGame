@@ -52,10 +52,13 @@ class GridObject(GameObject):
             raise ValueError("Cannot have negative number of columns or rows")
 
         self.cells = np.empty((cols, rows), dtype=CellObject)
+        self.points = np.zeros((cols, rows), dtype=int)
         
         for c in range(cols):
             for r in range(rows):
                 self.cells[c][r] = CellObject(0, 0)
+    
+    
 
 class CellObject(GameObject, SurfaceObject):
     def __init__(self, position: list[int], direction: list[int], walls: list[int], surface: SurfaceObject):
@@ -72,13 +75,16 @@ class CellObject(GameObject, SurfaceObject):
             return True
         return False
 
-class GridBasedObject(GameObject):
-    def __init__(self, position: list[int], direction: list[int], grid_base: GridObject):
-        super().__init__(self, position, direction)
+class GridBasedObject(GameObject, SurfaceObject):
+    def __init__(self, position: list[int], direction: list[int], grid_base: GridObject, surface: SurfaceObject):
+        GameObject.__init__(self, position, direction)
         self.base = grid_base
         self.current_row = 0
         self.current_col = 0
         self.SetPosition(self.base.cells[self.current_col][self.current_row].position)
+        
+        SurfaceObject.__init__(self, surface.get_width(), surface.get_height())
+        self.Rect(center=(0,0))
 
     def CanMoveOnward(self):
         if self.direction[0] == 0 and self.direction[1] == 0:

@@ -1,4 +1,4 @@
-from IObject import GridBasedObject, SurfaceObject
+from IObject import GridObject, GridBasedObject, SurfaceObject
 import random
 
 """
@@ -9,14 +9,11 @@ The ghosts are prohibited from reversing their direction of travel. They can onl
 Ghosts do not wander around aimlessly. A ghost is always trying to reach a specific tile somewhere on or off the screen. Each ghost calculates its target tile in a different manner. In chase mode, the target tile is usually related to Pac-Man’s current tile. In scatter mode, the target tile is a fixed tile located in the character’s home corner. Thus the only difference between chase mode and scatter mode is where the ghost’s target tile is located.
 """
 
-class Ghost(GridBasedObject, SurfaceObject):
-    def __init__(self, position: list[int], direction: list[int], surface: SurfaceObject):
-        GridBasedObject.__init__(self, position, direction)
+class Ghost(GridBasedObject):
+    def __init__(self, position: list[int], direction: list[int], grid: GridObject, surface: SurfaceObject):
+        super().__init__(self, position, direction, grid, surface)
         self.target_row: int
         self.target_col: int
-        
-        SurfaceObject.__init__(self, surface.get_width(), surface.get_height())
-        self.Rect(center=(0,0))
 
     def TargetCell(self, player: GridBasedObject):
         pass
@@ -28,6 +25,9 @@ class Ghost(GridBasedObject, SurfaceObject):
         directions = [-1, 0, 1]
         self.direction[0] = directions.pop(random.randint(0, 2))
         self.direction[1] = directions.pop(random.randint(0, 1))
+    
+    def ChangePosition(self, vector):
+        super().ChangePosition(vector)
 
 # Blinky’s target tile is always Pac-Man’s current tile.
 class Blinky(Ghost):
@@ -73,6 +73,7 @@ class Clyde(Ghost):
             self.target_col = player.current_col
         else:
             self.ScatterTargetCells()
+    
      def ScatterTargetCells(self, bottom_left: list[int]):
         super().ScatterDirection(self)
 

@@ -1,14 +1,13 @@
 from IObject import GridObject
 
 class Level:
-    def __init__(self, name: str, presetGrid: GridObject):
+    def __init__(self, name: str, grid: GridObject):
         self.name = name
 
-        if presetGrid is None:
+        if grid is None:
             self.original_grid = GridObject(28, 36)
         else:
-            self.original_grid = presetGrid
-
+            self.original_grid = grid
         self.RestartLevel()
 
     def CompleteLevel(self):

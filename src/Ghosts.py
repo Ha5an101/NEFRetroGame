@@ -10,7 +10,7 @@ Ghosts do not wander around aimlessly. A ghost is always trying to reach a speci
 """
 
 class Ghost(GridBasedObject, SurfaceObject):
-    def __init__(self, position: list[int], direction: list[int], grid_base: GridObject, , surface: SurfaceObject):
+    def __init__(self, position: list[int], direction: list[int], surface: SurfaceObject):
         GridBasedObject.__init__(self, position, direction)
         self.target_row: int
         self.target_col: int

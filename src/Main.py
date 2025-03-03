@@ -25,6 +25,7 @@ while True:
         if event.type == pg.QUIT:
             QuitApp()
     
+    
     keys = pg.key.get_pressed()
     
     if continueGameLoop:
@@ -36,6 +37,6 @@ while True:
             continueGameLoop = game.EndGame()
             QuitApp()
 
-    # Update screen
+    
     pg.display.update()
     clock.tick(famerate)

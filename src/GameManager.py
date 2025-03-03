@@ -23,6 +23,8 @@ class Game:
         return False
 
     def UpdateGame(self):
+        keys = pg.key.get_pressed()
+    
         def IsPlayerAlive():
             if self.lives == 0:
                 self.EndGame()
@@ -35,10 +37,11 @@ class Game:
         CheckCollisionWithPlayer()
 
         def MoveObjects():
-            self.player.ChangePosition() # Input
+            inp = [(1 if keys[pg.K_UP] or keys[pg.K_w] else -1 if keys[pg.K_DOWN] or keys[pg.K_s] else 0), (1 if keys[pg.K_RIGHT] or keys[pg.K_d] else -1 if keys[pg.K_LEFT] or keys[pg.K_a] else 0)]
+            self.player.ChangePosition(inp) # Input
 
             for ghost in self.ghosts:
-                ghost.ChangePosition([ghost.target_col, ghost.target_row])
+                ghost.ChangePosition([ghost.target_col - ghost.current_col, ghost.target_row - ghost.current_row])
         MoveObjects()
         
         

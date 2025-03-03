@@ -2,18 +2,18 @@ import pygame as pg
 import numpy as np
 
 class SurfaceObject:
-	def __init__(self, width: int, height: int):
-		self.surface = pg.Surface((width, height))
-		self.rect = self.surface.get_rect(topleft=(0, 0))
+    def __init__(self, width: int, height: int):
+        self.surface = pg.Surface((width, height))
+        self.rect = self.surface.get_rect(topleft=(0, 0))
 
     def DrawSurface(self, screen):
-		screen.blit(self.surface, self.rect)
+        screen.blit(self.surface, self.rect)
 
     def SetSurface(self, surface: pg.Surface):
-		self.surface = surface
+        self.surface = surface
 
     def Rect(self, **kwargs):
-		self.rect = self.surface.get_rect(kwargs)
+        self.rect = self.surface.get_rect(kwargs)
 
 class ImageObject(SurfaceObject):
 	def __init__ (self, path: str):
@@ -57,16 +57,18 @@ class GridObject(GameObject):
             for r in range(rows):
                 self.cells[c][r] = CellObject(0, 0)
 
-class CellObject(GameObject):
-    def __init__(self, position: list[int], direction: list[int], walls: list[int]):
-        super().__init__(self, position, direction)
+class CellObject(GameObject, SurfaceObject):
+    def __init__(self, position: list[int], direction: list[int], walls: list[int], surface: SurfaceObject):
+        GameObject.__init__(self, position, direction)
         self.walls = walls
+        
+        SurfaceObject.__init__(self, surface.surface.get_width(), surface.surface.get_height())
     
     def UpdateWalls(self, walls: list[int]):
         self.walls = walls
 
     def DoDirectionsAlign(self, game_object: GameObject, direction_index: int):
-        if game_object.direction[direction_index] == self.walls[direction_index]
+        if game_object.direction[direction_index] == self.walls[direction_index]:
             return True
         return False
 
@@ -76,7 +78,7 @@ class GridBasedObject(GameObject):
         self.base = grid_base
         self.current_row = 0
         self.current_col = 0
-        self.SetPosition(self.base.cells[current_col][current_row].position)
+        self.SetPosition(self.base.cells[self.current_col][self.current_row].position)
 
     def CanMoveOnward(self):
         if self.direction[0] == 0 and self.direction[1] == 0:
@@ -93,16 +95,16 @@ class GridBasedObject(GameObject):
         lead_direction = [0, 1] if up_priority else [1, 0] if right_priority else [0, -1] if down_priority else [-1, 0]
         lead_direction_index = 1 if lead_direction[0] == 0 else 0
         # Check if the object is not runnin into the cells wall
-        if self.base.cells[current_col][current_row].DoDirectionsAlign(lead_direction_index):
+        if self.base.cells[self.current_col][self.current_row].DoDirectionsAlign(lead_direction_index):
             return False
 
         return True
 
-    def SetPosition(self, position: list[int])
+    def SetPosition(self, position: list[int]):
         self.current_row = position[0]
         self.current_col = position[1]
 
-        super().SetPosition(self.base.cells[current_col][current_row].position)
+        super().SetPosition(self.base.cells[self.current_col][self.current_row].position)
 
     def ChangePosition(self, vector: list[int]):
         super().ChangePosition(self, vector)

@@ -16,46 +16,57 @@ class Game:
         self.screen_view = screen
     
     def StartGame(self):
-        # Do something
-        self.UpdateGame()
+        for cell_list in self.current_level.play_grid.cells:
+            for cell in cell_list:
+                cell.DrawSurface()
+        
         return False
 
     def UpdateGame(self):
-        if self.lives == 0:
-            self.EndGame()
-            return False
+        def IsPlayerAlive():
+            if self.lives == 0:
+                self.EndGame()
+                return False
+            return True
         
         def CheckCollisionWithPlayer():
             if self.player.rect.collidelist([ghost.rect for ghost in self.ghosts]):
-                # Decrease Lives
-                pass
+                self.lives -= 1
+        CheckCollisionWithPlayer()
 
         def MoveObjects():
             self.player.ChangePosition() # Input
 
             for ghost in self.ghosts:
-                ghost.ChangePosition([ghost.target_col, ghost.target_row])3
+                ghost.ChangePosition([ghost.target_col, ghost.target_row])
+        MoveObjects()
+        
+        
+        def DrawObjects():
+            self.player.DrawSurface(self.screen_view)
 
-        self.player.DrawSurface(self.screen_view)
+            for ghost in self.ghosts:
+                ghost.DrawSurface(self.screen_view)
+        DrawObjects()
 
-        for ghost in self.ghosts:
-            ghost.DrawSurface(self.screen_view)
-
-        return True
+        return IsPlayerAlive()
 
     def RestartGame(self):
         self.lives = self.start_lives
         self.score = 0
+        
+        for cell_list in self.current_level.play_grid.cells:
+            for cell in cell_list:
+                cell.DrawSurface()
 
-        self.UpdateGame()
-        return False
+        return self.UpdateGame()
 
     def EndGame(self):
         # Do something
         return False
 
-    def AccumilateScore(points: int):
-        self.score += point.value
+    def AccumilateScore(self, points: int):
+        self.score += self.point.value
 
 
 # Saved list of points
